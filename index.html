@@ -1,0 +1,73 @@
+<!DOCTYPEhtml>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cloud Survey</title>
+       <link rel="stylesheet" href="/style.css"/>
+    </head>
+    <body>
+      <h1 id="title">Survey-Form</h1>
+      <p id="description">This is a cloud survey For The Most Popular Cloud Provider</p>
+      <form id="survey-form">
+        <fieldset>
+       <label  for="name"id="name-label">Enter First Name:<input  id="name"type="text" required placeholder="john doe"/></label>
+         <label for="email" id="email-label">Enter Valid Email:<input id="email" type="email" required placeholder="xyz@gmail.com or xyz@outlook.com"/></label>
+          <label for="number" id="number-label">Enter Valid Number:<input id="number" type="number" min="12" max="20" required  placeholder="254700000000"/></label>
+         
+          </fieldset>
+          <fieldset>
+             <label for="dropdown">Have You Taken Any Cloud Certifications?
+             <select id="dropdown">
+               <option value="">(select one)</option>
+               <option value="1">Yes</option>
+               <option value="2">No</option>
+             </select>
+             </label>
+          </fieldset>
+          <fieldset>
+             <label for="provider">From Which Cloud Provider?
+             <select id="provider">
+               <option value="">(select upto 2)</option>
+               <option value="1">AWS</option>
+               <option value="2">AZURE</option>
+               <option value="3">GCP</option>
+               <option value="4">ORACLE</option>
+             </select>
+             </label>
+
+                   <label for="bio">Briefly Tell Us Why You Are Interested In The Cloud:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I am fascinated by the cloud because..."></textarea>
+        </label>
+          </fieldset>
+          <fieldset>
+            <legend>Recommendation for Cloud Certification</legend>
+   
+      <!-- Radio Button Group 1 -->
+      <label for="highly"><input id="highly" type="radio" name="recommend-type" class="inline" value="select" checked />Highly recommend</label>
+
+      <label for="recommend"><input id="recommend" type="radio" name="recommend-type" class="inline" value="select"/> Not Recommend</label>
+      </fieldset>
+<fieldset>
+      <legend>Likelihood of not  Recommending Cloud Certifications</legend>
+      <!-- Radio Button Group 2 -->
+        <label for="not"><input id="not" type="radio" name="not-type" class="inline" value="select" />Higly recommend</label>
+        <label for="never"><input id="never" type="radio" name="recommend-type" class="inline" value="select" />Not recommend</label>
+          </fieldset>
+          
+
+
+
+
+           <label for="recapture">
+        <input class="inline" id="not a robot" type="checkbox" value="accepted" required name="not a robot" /> I am not a robot
+      </label>
+      <label for="terms and conditions">
+        <input class="inline" id="terms and conditions" type="checkbox"  value="accept"required name="not a robot" /> I accept the terms and conditions
+      </label>
+          
+          <input type="submit" value="Submit" id="submit"/>
+      </form>
+      
+      
+      </body>
+  </html>
